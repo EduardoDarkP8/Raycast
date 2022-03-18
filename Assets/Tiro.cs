@@ -8,6 +8,7 @@ public class Tiro : MonoBehaviour
     float x = 0, y = 0, deltax, deltay;
     public float sense=5f;
     public GameObject Mira;
+    public 
     // Start is called before the first frame update
     void Start()
     {
@@ -42,5 +43,6 @@ public class Tiro : MonoBehaviour
         y -= deltay;
         y = Mathf.Clamp(y, -75f, 55f);
         transform.eulerAngles = new Vector3(y,x,0);
+
     }
 }
